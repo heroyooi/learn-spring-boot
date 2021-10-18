@@ -76,6 +76,18 @@ public class FirstController {
 }
 ```
 
+### MVC의 역할과 실행 흐름
+
+- 요청은 컨트롤러가 받는다. 어떻게? @GetMapping 으로
+  - 컨트롤러 위치: src/main/java/com.example.firstproject/controller/FirstController
+- 보여줄 뷰 페이지는 해당 메서드의 return 값인 "greetings" 뷰 페이지 템플릿이고,
+  - 뷰 템플릿 위치: src/main/resources/templates/goodbye.mustache
+- 그 페이지에 사용될 변수는 model을 통해서 등록한다. model.addAttribute("username", "yeonwook");
+
+### 뷰 템플릿과 레이아웃
+
+- [부트스트랩](https://getbootstrap.com)
+
 ## 강좌
 
-- [듣던 강좌 05](https://www.youtube.com/watch?v=5vfxeRJJsWo&list=PLyebPLlVYXCiYdYaWRKgCqvnCFrLEANXt&index=5)
+- [듣던 강좌 07](https://www.youtube.com/watch?v=rzjudEZ8bt0&list=PLyebPLlVYXCiYdYaWRKgCqvnCFrLEANXt&index=7)

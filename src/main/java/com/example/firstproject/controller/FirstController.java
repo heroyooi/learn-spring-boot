@@ -9,7 +9,13 @@ public class FirstController {
 
     @GetMapping("/hi")
     public String niceToMeetYou(Model model) {
-        model.addAttribute("username", "yeonwook");
-        return "greetings"; // templates/greetings.mustache -> 브라우저로 전송!
+        model.addAttribute("username", "heroyooi");
+        return "greetings";
+    }
+
+    @GetMapping("/bye")
+    public String seeYouNext(Model model) {
+        model.addAttribute("nickname", "여누기");
+        return "goodbye";
     }
 }
